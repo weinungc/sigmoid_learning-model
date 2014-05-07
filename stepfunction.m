@@ -1,4 +1,4 @@
-function while_version(n)
+function stepfunction(n)
 %UNTITLED Summary of this funcount + 1ion goes here
 %   Detailed explanation goes here
 x1 =[-1 0 -2 1]';
@@ -30,43 +30,43 @@ while(count <= n)
         
         if (rem(count + 1,6) == 1)
 			if (fin' * x6 <0)
-				fin = fin + (0.95)^count * (d6 + 1 ) * x6;
+				fin = fin + (0.95)^count * (d6) * x6;
 			else
 				fin = fin + (0.95)^count * (d6 - 1 ) * x6;
 			end
 		end
 		if (rem(count + 1,6) == 2)
 			if (fin' * x1 <0)
-				fin = fin + (0.95)^count * (d1 + 1 ) * x1;
+				fin = fin + (0.95)^count * (d1) * x1;
 			else
 				fin = fin + (0.95)^count * (d1 - 1 ) * x1;
 			end
 		end
 		if (rem(count + 1,6) == 3)
 			if (fin' * x2 <0)
-				fin = fin + (0.95)^count * (d2 + 1 ) * x2;
+				fin = fin + (0.95)^count * (d2) * x2;
 			else
 				fin = fin + (0.95)^count * (d2 - 1 ) * x2;
 			end
 		end
 		if (rem(count + 1,6) == 4)
 			if (fin' * x3 <0)
-				fin = fin + (0.95)^count * (d3 + 1 ) * x3;
+				fin = fin + (0.95)^count * (d3) * x3;
 			else
 				fin = fin + (0.95)^count * (d3 - 1 ) * x3;
 			end
 		end
 		if (rem(count + 1,6) == 5)
 			if (fin' * x4 <0)
-				fin = fin + (0.95)^count * (d4 + 1 ) * x4;
+				fin = fin + (0.95)^count * (d4) * x4;
 			else
 				fin = fin + (0.95)^count * (d4 - 1 ) * x4;
 			end
 		end
 		
 		if (rem(count + 1,6) == 0)
-			if (fin' * x6 <0)
-				fin = fin + (0.95)^count * (d5 + 1 ) * x5;
+			if (fin' * x5 <0)
+				fin = fin + (0.95)^count * (d5) * x5;
 			else
 				fin = fin + (0.95)^count * (d5 - 1 ) * x5;
 			end
